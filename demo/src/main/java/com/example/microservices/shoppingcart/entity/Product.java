@@ -1,4 +1,4 @@
-package com.example.microservices.demo.entity;
+package com.example.microservices.shoppingcart.entity;
 
 import java.util.UUID;
 

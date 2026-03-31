@@ -1,8 +1,7 @@
-package com.example.microservices.demo.repository;
+package com.example.microservices.shoppingcart.repository;
 
-import com.example.microservices.demo.entity.Product;
+import com.example.microservices.shoppingcart.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.UUID;

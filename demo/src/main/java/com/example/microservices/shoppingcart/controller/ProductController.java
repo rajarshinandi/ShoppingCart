@@ -1,8 +1,8 @@
-package com.example.microservices.demo.controller;
+package com.example.microservices.shoppingcart.controller;
 
 
-import com.example.microservices.demo.entity.Product;
-import com.example.microservices.demo.repository.ProductRepository;
+import com.example.microservices.shoppingcart.entity.Product;
+import com.example.microservices.shoppingcart.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
