@@ -3,7 +3,9 @@ package com.example.microservices.shoppingcart.controller;
 
 import com.example.microservices.shoppingcart.entity.Product;
 import com.example.microservices.shoppingcart.repository.ProductRepository;
+import com.example.microservices.shoppingcart.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,6 +27,9 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
+    @Autowired
+    private ProductService productService;
+
     @GetMapping
     public List<Product> getProducts() {
         return productRepository.findAll();
@@ -42,18 +47,9 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<Map<String, Object>> createProduct(@RequestBody Product product) {
-        // First we save the product to the database using the productRepository's save method.
-        // This will return the saved product, which includes the generated productId.
-        Product savedProduct = productRepository.save(product);
+    public ResponseEntity<?> createProduct(@RequestBody Product product) {
+        Product savedProduct = productService.createProduct(product);
 
-        Map<String, Object> response = Map.of(
-                "message", "Product created successfully",
-                "productId", savedProduct.getProductId()
-        );
-
-        // We return a ResponseEntity with a status of 201 (Created) and the response body containing the success message and the generated productId.
-        return ResponseEntity.status(201).body(response);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedProduct); // Return the created product with a 201 status code
     }
-
 }

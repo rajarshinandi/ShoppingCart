@@ -5,6 +5,8 @@ import java.util.UUID;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
 /**
@@ -31,7 +33,11 @@ public class Product {
     private UUID productId;
 
     private String name;
-    private double price;
+
+    @NotNull
+    @Positive
+    private Double price;
+
     private String description;
 
     public Object getProductId() {
