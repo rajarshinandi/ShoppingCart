@@ -14,10 +14,10 @@
     </parent>
 
     <groupId>com.example.microservices</groupId>
-    <artifactId>shoppingcart</artifactId>
+    <artifactId>products</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Shoppingcart</name>
-    <description>Spring Boot Shopping Cart Application</description>
+    <name>products</name>
+    <description>Products API</description>
 
     <properties>
         <java.version>17</java.version>
