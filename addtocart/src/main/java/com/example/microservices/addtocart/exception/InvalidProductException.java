@@ -1,4 +1,4 @@
-package com.example.microservices.shoppingcart.exception;
+package com.example.microservices.addtocart.exception;
 
 //Why runtime exception?
 // Because it is an unchecked exception, which means that it does not need to

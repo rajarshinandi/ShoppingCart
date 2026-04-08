@@ -1,8 +1,8 @@
-package com.example.microservices.shoppingcart.service;
+package com.example.microservices.products.service;
 
-import com.example.microservices.shoppingcart.entity.Product;
-import com.example.microservices.shoppingcart.exception.InvalidProductException;
-import com.example.microservices.shoppingcart.repository.ProductRepository;
+import com.example.microservices.products.entity.Product;
+import com.example.microservices.products.exception.InvalidProductException;
+import com.example.microservices.products.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,6 +1,6 @@
-package com.example.microservices.shoppingcart.repository;
+package com.example.microservices.products.repository;
 
-import com.example.microservices.shoppingcart.entity.Product;
+import com.example.microservices.products.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

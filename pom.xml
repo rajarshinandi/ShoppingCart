@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.microservices</groupId>
+    <artifactId>shoppingcart</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>products</module>
+        <module>addtocart</module>
+    </modules>
+</project>

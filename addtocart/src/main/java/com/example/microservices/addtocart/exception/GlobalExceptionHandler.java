@@ -1,4 +1,4 @@
-package com.example.microservices.shoppingcart.exception;
+package com.example.microservices.addtocart.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

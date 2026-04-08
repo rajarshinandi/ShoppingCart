@@ -1,16 +1,15 @@
-package com.example.microservices.shoppingcart.controller;
+package com.example.microservices.products.controller;
 
 
-import com.example.microservices.shoppingcart.entity.Product;
-import com.example.microservices.shoppingcart.repository.ProductRepository;
-import com.example.microservices.shoppingcart.service.ProductService;
+import com.example.microservices.products.entity.Product;
+import com.example.microservices.products.repository.ProductRepository;
+import com.example.microservices.products.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 // Why @RestController?

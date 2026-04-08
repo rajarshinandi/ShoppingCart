@@ -1,4 +1,4 @@
-package com.example.microservices.shoppingcart.exception;
+package com.example.microservices.addtocart.exception;
 
 public class ProductNotFoundException extends RuntimeException {
 
